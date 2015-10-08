@@ -41,10 +41,7 @@ public class CoffeeBillTest
 
       System.out.println(theName + ", The amount you owe is: $" + harrysBill.calcBill());
       
-      CoffeeBill JoeyJoJo = new CoffeeBill("Joe", 5, 8,0);
-      JoeyJoJo.addMuffins(6);
-      System.out.println("Joe's bill is: $" + JoeyJoJo.calcBill());
-
+   
 
 
 	//Add System.exit(0); - correct end of the program
