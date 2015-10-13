@@ -13,7 +13,6 @@ public class EmployeeTest
 	//Main method
 	 public static void main ( String[] args) throws IOException
 	 {
-
 		 String input;
 
 		 String theName;
@@ -35,22 +34,42 @@ public class EmployeeTest
          System.out.println("How many hours did the Employee work?");
 		 input = console.readLine();
          theHours = Double.parseDouble(input);
-
-
 		 Employee matt = new Employee(theName, theID, thePay, theHours);
+
+		 matt.displayEmployee();
+		 
+		 
+		 matt.setPay(10);
+		 matt.setName("Matt Tigrett");
+		 matt.setHours(40);
+		 matt.setID(5);
+		 
+		 
 		 matt.displayEmployee();
 
-		 matt.setPay(100.50);
-		 matt.setName("Idiot");
-		 matt.setHours(20.5);
-		 matt.setID(5);
-		 matt.displayEmployee();
-		 
-		 
+		System.out.println();
+		System.out.println("The Employee's name is:   " +  matt.getName());
+		System.out.println();
+		System.out.println();
+		System.out.println("The Employee's ID is:   " +  matt.getID());
+		System.out.println();
+		System.out.println();
+		System.out.println("The Employee's pay is:   " +  matt.getPay());
+		System.out.println();
+		System.out.println();
+		System.out.println("The Employee's hours are:   " +  matt.getHours());
+		System.out.println();
+
+
+		matt.getPaid();
+
+
+
 
 
 	     //Add System.exit(0); - correct end of the program
          System.exit(0);
 
 	 }
+
 }
