@@ -2,6 +2,7 @@
 This class represents a Employee
 */
 
+
 public class Employee
 
 {
@@ -83,6 +84,32 @@ public void displayEmployee(){
 	System.out.println("The Employee's pay is:    " + pay);
 	System.out.println("The Employee's hours are: " + hours);
 	}//end of the displayProduct
+
+public void getPaid(){
+
+	double WHrate, grossPay, netPay;
+
+	grossPay = hours*pay;
+
+	if (grossPay >= 500.01){
+		WHrate = .2;
+	}else if (grossPay >= 400.01){
+		WHrate = .15;
+	}else if (grossPay >= 300.01){
+		WHrate = .12;
+	}else {
+		WHrate = .1;
+	}
+
+	netPay = grossPay - (grossPay*WHrate);
+
+	System.out.println();
+	System.out.println("The Employee's Gross Pay is:      " + grossPay);
+	System.out.println("The Employee's Withholding % is:  " + 100*WHrate + "%");
+	System.out.println("The Employee's Net Pay is:        " + netPay);
+
+
+}
 
 
 
