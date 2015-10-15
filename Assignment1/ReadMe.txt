@@ -4,6 +4,8 @@ This is the beginning of the Assignment. So far, I have created the class for th
 
 First example is complete. Every feature is completed. Next step is to include all the other pages to be attached. I'll link them when I'm finished.
 
+Another example is completed.
+
 ============================EXAMPLES============================================
 
 Project Hand-in Template:
